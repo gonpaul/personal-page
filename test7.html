@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            background-image: url(https://storage.pixteller.com/designs/designs-images/2019-03-27/05/funny-background-drawing-backgrounds-cartoon-1-5c9b97d1c4d88.png);
+        }
+        .coloredblock {
+            background-color: rebeccapurple;
+        }
+
+        .vw-100 {
+            height: 200px;
+            width: 100vw;
+            margin-bottom: 20px;
+        }
+
+        .w-100ps {
+            height: 200px;
+            width: 100%;
+        }
+
+        h3 {
+            text-align: center;
+            padding-top: 50px;
+            font-size: 3vw;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 100%;
+            line-height: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="coloredblock vw-100"><h3>Viewport width</h3></div>
+        <p>Плюсы: если постоянно использовать ширину порта, то весь контент будет расположен пропорпорционально
+        к ширине экрана независимо от разрешения. Легко сделать так, чтобы элементы отображалить также на рабочих
+        станциях, как и на телефоне (адаптивность). Пример, заголовок. Разница между двумя способами: первый способ
+        более надёжный, так как не зависит от родительских элементов.
+        </p>
+        <p>Адаптивность можно сравнить уменьшая масштаб экрана. Смотреть на изменение размера шрифта заголовков и
+            параграфа
+        </p>
+    <hr style="border-style: none;">
+    <div class="coloredblock w-100ps"><h3>100% of a body element</h3></div>
+
+    
+    <div style="width: 580px;">
+        <div class="coloredblock w-100ps">
+            <h3>100% of a parent size</h3>
+        </div>
+        
+    </div>
+
+    <!-- Using vw as unit for everything in your website, including font sizes and heights, 
+    will make it so that the site is always displayed proportionally to the device's
+     screen width regardless of it's resolution. This makes it super easy to ensure your
+      website is displayed exactly the same in both workstation and mobile. Also note thet width: 100% 
+      is relative to it's first parent with a layout. So if you have an element with width:100% inside 
+      another element that has a specific width, the child element will only take up the total width
+       of that parent. -->
+</body>
+</html>
